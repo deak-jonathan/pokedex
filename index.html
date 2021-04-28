@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Pokedex HTML/CSS/JAVASCRIPT" />
+    <link rel="icon" type="image/png" href="/asset/pokedex.png" />
+  </head>
+  <body>
+    <audio class="pokedex-open" autoplay="autoplay">
+      <source src="asset/pokesound.mp3" />
+      <source src="asset/pokesound.ogg" />
+    </audio>
+    <audio loop="loop" class="song" controls="controls" autoplay="autoplay">
+      <source src="asset/pokemonSong.mp3" />
+      <source src="asset/pokemonSong.ogg" />
+    </audio>
+    <audio class="btn-song">
+      <source src="asset/arrow.mp3" />
+      <source src="asset/arrow.ogg" />
+    </audio>
+    <div class="pokedex">
+      <div class="pop-up">
+        <p>
+          Utiliser les flèches directionnel pour naviguer dans le pokedex.
+          Appuyer sur le bouton play pour écouter le nom du pokemon.
+        </p>
+        <button type="button" id="btn-getit">J'ai compris</button>
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <!-----------------------------LEFT----------------------------------------->
+      <div class="left">
+        <!-----------------------------HEADER----------------------------------------->
+        <div class="top">
+          <header>
+            <div class="main-round">
+              <div class="second-round">
+                <div class="reflection"></div>
+              </div>
+            </div>
+            <div class="three-round">
+              <div class="small-round red-round">
+                <div class="reflection"></div>
+              </div>
+              <div class="small-round yellow-round">
+                <div class="reflection"></div>
+              </div>
+              <div class="small-round green-round">
+                <div class="reflection"></div>
+              </div>
+            </div>
+          </header>
+          <div class="top-second-bloc"></div>
+        </div>
+        <div class="bloc2">
+          <!-----------------------------component----------------------------------------->
+          <div class="outline-image">
+            <div class="light">
+              <div class="light-round l-one"></div>
+              <div class="light-round l-two"></div>
+            </div>
+            <div class="image-pokemon">
+              <img src="" alt="photo pokemon" class="img" />
+            </div>
+            <div class="bottom">
+              <div class="round-red"></div>
+              <div class="container-line">
+                <div class="container1">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <div class="container2">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-component">
+            <div class="bottom-round-blue"></div>
+            <div class="three-bottom-component">
+              <div class="two-bar">
+                <div class="component-one green"></div>
+                <div class="component-one orange"></div>
+              </div>
+              <div class="cube-component">
+                <div class="child-cube">
+                  <p class="number-pokemon"></p>
+                </div>
+              </div>
+            </div>
+            <div class="arrow">
+              <div class="cube one">
+                <div class="small-arrow one"></div>
+              </div>
+              <div class="cube-center">
+                <div class="cube two">
+                  <div class="small-arrow two"></div>
+                </div>
+                <div class="cube three">
+                  <div class="round-oppacity"></div>
+                </div>
+                <div class="cube four">
+                  <div class="small-arrow four"></div>
+                </div>
+              </div>
+              <div class="cube five">
+                <div class="small-arrow five"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-----------------------------CENTRAL_SECTION----------------------------------------->
+      <div class="separation">
+        <div class="hight">
+          <div class="one rectangle"></div>
+          <div class="two rectangle"></div>
+        </div>
+        <div class="low rectangle"></div>
+        <div class="blocbis"></div>
+      </div>
+
+      <!-----------------------------RIGHT----------------------------------------->
+      <div class="right-top"></div>
+      <div class="right">
+        <div class="information">
+          <div class="info">
+            <p class="nom"></p>
+            <p class="type"></p>
+            <p class="poid"></p>
+            <p class="genus"></p>
+            <p class="localisation"></p>
+          </div>
+        </div>
+        <div class="cube-blue">
+          <div class="child-blue one"></div>
+          <div class="child-blue two"></div>
+          <div class="child-blue three"></div>
+          <div class="child-blue four"></div>
+          <div class="child-blue five"></div>
+          <div class="child-blue six"></div>
+          <div class="child-blue seven"></div>
+          <div class="child-blue eight"></div>
+          <div class="child-blue nine"></div>
+          <div class="child-blue ten"></div>
+        </div>
+        <div class="bottom-component-right">
+          <div class="component-top">
+            <div class="componant-one-left">
+              <div class="round-top">
+                <div class="round-small one"></div>
+                <div class="round-small two"></div>
+              </div>
+              <div class="cube-bottom">
+                <button class="cubes one back">
+                  <div class="arrow-left"></div>
+                </button>
+                <button class="cubes two next">
+                  <div class="arrow-right"></div>
+                </button>
+              </div>
+            </div>
+            <div class="componant-two-right">
+              <div class="two-bar-right">
+                <div class="component-one green"></div>
+                <div class="component-one orange"></div>
+              </div>
+              <button class="round-play" type="button">
+                <div class="arrow-play-right"></div>
+              </button>
+            </div>
+          </div>
+          <div class="componant-three-bottom">
+            <div class="boxone"></div>
+            <div class="boxtwo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7579eef61b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
