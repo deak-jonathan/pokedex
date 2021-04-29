@@ -6,7 +6,7 @@ const lightTwo = document.querySelector(".l-two");
 const btnGetIt = document.querySelector("#btn-getit");
 let allPokemon = [];
 let tabEnd = [];
-
+sonPokedex();
 /**
  * button song
  */
@@ -47,7 +47,7 @@ document.querySelector(".pokedex-open").volume = 0.2;
 function sonPokedex() {
   document.querySelector(".pokedex-open").setAttribute("autoplay", "");
 }
-sonPokedex();
+
 /**
  * Button pop-UP
  */
@@ -86,7 +86,6 @@ function fetchPokemonFull(pokemon) {
           objPokemonFull.genera = pokeData.genera[7].genus;
           objPokemonFull.habitat = pokeData.habitat.name;
           allPokemon.push(objPokemonFull);
-          console.log(allPokemon);
           let numPokemon = 0;
           let tabNamePokemon = [];
           if (allPokemon.length === 151) {
