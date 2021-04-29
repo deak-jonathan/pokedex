@@ -18,6 +18,9 @@ body {
   display: flex;
   position: relative;
 }
+.song {
+  margin-bottom: 10px;
+}
 .pop-up {
   display: flex;
   align-items: center;
